@@ -1,0 +1,13 @@
+---
+layout: base.njk
+---
+<section class="hero">
+    <p class="date">{{ date | formatDate }}</p>
+    <h1>{{ title }}</h1>
+</section>
+
+<div class="content">
+    <a href="/events/" class="back-link"><i class="fas fa-arrow-left"></i> Back to Events</a>
+    
+    {{ content | safe }}
+</div>

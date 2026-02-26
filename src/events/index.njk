@@ -1,0 +1,30 @@
+---
+layout: base.njk
+---
+
+<section class="hero">
+        <h1>Our <span>Events</span></h1>
+        <p>Stay updated with the latest celebrations, gatherings, and cultural events from Maharashtra Mandal Krakow.
+        </p>
+    </section>
+
+    <section class="events-section">
+        <div class="events-grid">
+            
+        {% for post in collections.event | reverse %}
+            <article class="event-card fade-in">
+                <img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="event-image">
+                <div class="event-content">
+                    <span class="event-category">{{ post.data.category }}</span>
+                    <h2>{{ post.data.title }}</h2>
+                    <p class="event-date">{{ post.data.date | formatDate }}</p>
+                    <p>{{ post.data.excerpt }}</p>
+                    <a href="{{ post.url }}" class="event-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        {% endfor %}
+
+        </div>
+    </section>
+
+    

@@ -1,0 +1,272 @@
+---
+layout: base.njk
+---
+
+<!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating floating-1">🪔</div>
+        <div class="floating floating-2">🎭</div>
+        <div class="floating floating-3">🧧</div>
+        <div class="hero-content">
+            <h1>
+                Maharashtra Mandal Krakow
+                <span class="marathi">महाराष्ट्र मंडळ क्राकोव</span>
+            </h1>
+            <p>Celebrating and preserving the rich Marathi culture, traditions, and heritage in the heart of Poland.
+                Join us in our cultural journey.</p>
+            <div class="hero-buttons">
+                <a href="#events" class="btn btn-primary">Upcoming Events</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>About <span>Us</span></h2>
+            <p>We are a vibrant community of Marathi-speaking people in Krakow, dedicated to preserving our cultural
+                roots while embracing our new home.</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-card fade-in">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h3>Cultural Preservation</h3>
+                <p>Celebrating Maharashtra's rich heritage through traditional festivals like Ganeshotsav, Diwali, Gudi
+                    Padwa, and more.</p>
+            </div>
+            <div class="about-card fade-in">
+                <i class="fas fa-users"></i>
+                <h3>Community Building</h3>
+                <p>Creating a warm and welcoming space for Marathi families and individuals to connect, share, and grow
+                    together.</p>
+            </div>
+            <div class="about-card fade-in">
+                <i class="fas fa-globe-europe"></i>
+                <h3>Cultural Exchange</h3>
+                <p>Bridging the gap between Indian and Polish cultures through interactive events and collaborations.
+                </p>
+            </div>
+            <div class="about-card fade-in">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Regular Events</h3>
+                <p>Organizing monthly cultural gatherings, food festivals, dance workshops, and celebration of Indian
+                    festivals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="section-header">
+            <h2>Upcoming <span>Events</span></h2>
+            <p>Mark your calendars for our upcoming cultural celebrations and gatherings.</p>
+        </div>
+        <div class="events-timeline">
+            <div class="event-item fade-in">
+                <div class="event-card">
+                    <span class="event-date">March 2026</span>
+                    <h3>Gudi Padwa Celebration</h3>
+                    <p>Welcome the new year with traditional Gudi Padwa festivities, including rangoli, traditional
+                        food, and cultural performances.</p>
+                    <div class="event-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Radha Govind Bhakti Yog Temple, Krakow
+                    </div>
+                </div>
+            </div>
+            <div class="event-item fade-in">
+                <div class="event-card">
+                    <span class="event-date">April 2026</span>
+                    <h3>Maharashtra Day Food Festival</h3>
+                    <p>Celebrate Maharashtra Day with an authentic food festival featuring traditional Marathi dishes,
+                        music, and dance.</p>
+                    <div class="event-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Krakow, Poland
+                    </div>
+                </div>
+            </div>
+            <div class="event-item fade-in">
+                <div class="event-card">
+                    <span class="event-date">August-September 2026</span>
+                    <h3>Ganeshotsav 2026</h3>
+                    <p>Our biggest celebration of the year! 10 days of Ganpati Bappa's grandeur with visarjan, cultural
+                        programs, and community gatherings.</p>
+                    <div class="event-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Radha Govind Bhakti Yog Temple, Krakow
+                    </div>
+                </div>
+            </div>
+            <div class="event-item fade-in">
+                <div class="event-card">
+                    <span class="event-date">October-November 2026</span>
+                    <h3>Diwali Celebration</h3>
+                    <p>The festival of lights celebration with diya decorating, fireworks, rangoli competitions, and
+                        delicious festive food.</p>
+                    <div class="event-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Krakow, Poland
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-events">
+            <a href="/events/" class="btn btn-primary">View All Events</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="section-header">
+            <h2>Photo <span>Gallery</span></h2>
+            <p>Relive the beautiful moments from our past events and celebrations.</p>
+        </div>
+        <div class="gallery-tabs">
+            <button class="gallery-tab active" data-tab="photos">Photos</button>
+            <button class="gallery-tab" data-tab="videos">Videos</button>
+        </div>
+        <div id="photos" class="gallery-content active">
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/background.jpeg" alt="Event Photo 1">
+                    <i class="fas fa-expand"></i>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/logo.png" alt="Event Photo 2">
+                    <i class="fas fa-expand"></i>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/maharashtra_map.png" alt="Event Photo 3">
+                    <i class="fas fa-expand"></i>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/background.jpeg" alt="Event Photo 4">
+                    <i class="fas fa-expand"></i>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/logo.png" alt="Event Photo 5">
+                    <i class="fas fa-expand"></i>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/background.jpeg" alt="Event Photo 6">
+                    <i class="fas fa-expand"></i>
+                </div>
+            </div>
+        </div>
+        <div id="videos" class="gallery-content">
+            <div class="video-grid">
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="section-header">
+            <h2>Latest <span>Updates</span></h2>
+            <p>Stay informed about our latest events, celebrations, and community news.</p>
+        </div>
+        <div class="blog-grid">
+            
+        {% for post in collections.event | reverse %}
+          {% if loop.index <= 3 %}
+            <article class="blog-card fade-in">
+                <img src="{{ post.data.image | replace('../', '') }}" alt="{{ post.data.title }}" class="blog-image">
+                <div class="blog-content">
+                    <span class="blog-date">{{ post.data.date | formatDate }}</span>
+                    <h3>{{ post.data.title }}</h3>
+                    <p>{{ post.data.excerpt }}</p>
+                    <a href="{{ post.url }}" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+
+        </div>
+        <div class="view-all-events">
+            <a href="/events/" class="btn btn-secondary">View All Posts</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Get in <span>Touch</span></h2>
+            <p>We'd love to hear from you. Reach out to learn more about our community and events.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Radha Govind Bhakti Yog Temple<br>Krakow, Poland</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>maharashtramandalkrakow@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+48 XXX XXX XXX</p>
+                    </div>
+                </div>
+                <h4 style="margin-top: 2rem;">Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="">Select a subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="event">Event Information</option>
+                        <option value="membership">Membership</option>
+                        <option value="volunteer">Volunteering</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    
